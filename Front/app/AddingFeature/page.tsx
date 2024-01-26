@@ -10,6 +10,7 @@ import { Slide } from "react-slideshow-image";
 import { RiSchoolFill } from "react-icons/ri";
 import { MdLiving } from "react-icons/md";
 import { AiOutlineSafety } from "react-icons/ai";
+import { DataContext } from "../context";
 
 export default function AddingFeatures(){
 
@@ -22,19 +23,21 @@ export default function AddingFeatures(){
         <div>
                    
 
-                        <div className="grid  gap-3 md:grid-cols-3 ml-20 mb-24">
+                        <div className="grid md:grid-cols-2 gap-4 ml-20 mb-24">
 
                             {context?.categories.map((el:any,i)=>{
 
                                 return (
-                                    <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mt-30">
+                                
+                                    <div className=" flex flex-r w-80 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 mt-30">
                                     
-                                    <div className="flex flex-center  gap-20">
-                                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{el.categorieName}</h5>
-                                        {feature[i]}
+                                    <div className="flex flex-center gap-4 ml-4 ">
+                                    <div className=" justify-end">{feature[i]}</div>
+                                    <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{el.categorieName}</h5>
+                                  
                                         </div>
                                     <input id="vue-checkbox-list" type="checkbox"
-                                    className="w-8 h-8  bg-gray-100 border-gray-300 rounded focus:ring-orange- dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>                                              
+                                    className="w-8 h-8 ml-6 bg-gray-100 border-gray-300 rounded focus:ring-orange- dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"/>                                              
                                     
                                     </div>
                                 )
@@ -45,11 +48,7 @@ export default function AddingFeatures(){
 
                         </div> 
 
-                        <div className="flex justify-center items-center mb-10">
-                            <button className=" hover:bg-orange-950 text-orange-950 font-semibold hover:text-white py-2 px-4 border border-orange-950 hover:border-transparent rounded">
-                                Confirm Chooses
-                            </button>
-                        </div>
+               
                         
         </div>
         
