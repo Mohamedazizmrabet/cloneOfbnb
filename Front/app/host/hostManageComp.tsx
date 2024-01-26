@@ -61,10 +61,9 @@ console.log("userm" , userm)
     <div className="w-[1100px]">
         <div className="flex flex-row justify-between items-center">
 
-            <h1 className="text-4xl font-bold">welcome {context?.loggedUser.userName}!</h1> <Link className="flex justify-center items-center w-[120px] h-[30px] bg-slate-800 text-white rounded" href='' >add a home</Link> 
+            <h1 className="text-4xl font-bold"> Welcome {context?.loggedUser.userName}!</h1> <Link className="flex justify-center items-center w-[120px] h-[30px] bg-slate-800 text-white rounded" href='' >add a home</Link> 
 
-            <div className="text-4xl font-bold flex flex-r gap-4"> <Avatar alt="Remy Sharp" src={userm.userImage }  sx={{ width: 60, height: 60 }} /> <span className="mt-3">{userm.userName}</span></div> <Link className="flex justify-center items-center w-[120px] h-[30px] bg-slate-800 text-white rounded" href='' >add a home</Link> 
-
+          
         </div>
         <div className="flex flex-col mt-[50px]">
             <h1 className="text-xl">Your reservations</h1>

@@ -49,9 +49,9 @@
     margin-top: -50px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
     border-radius: 15px; 
-    background-color: #270e0e; 
+    background-color: #d9d2d2; 
     text-align: center;
-    color: beige;
+    color: black;
   }
   .bed {
     font-size: x-large;
@@ -66,9 +66,9 @@
     margin-top: 24px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
     border-radius: 15px; 
-    background-color: #270e0e; 
+    background-color: #d9d2d2; 
     text-align: center;
-    color: beige;
+    color: black;
   }
   .room {
     font-size: x-large;
@@ -83,9 +83,9 @@
     margin-top: 24px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); 
     border-radius: 15px; 
-    background-color: #270e0e; 
+    background-color: #d9d2d2; 
     text-align: center;
-    color: beige;
+    color: black;
   }
   
   .iconHome{
