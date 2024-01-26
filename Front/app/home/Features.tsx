@@ -1,6 +1,7 @@
 "use client"
 import { useContext, useState } from "react";
 import { DataContext } from "../context";
+
 import { FaSwimmingPool, FaWifi } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
 import { PiTelevisionFill } from "react-icons/pi";

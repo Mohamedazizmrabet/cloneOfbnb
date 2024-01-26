@@ -1,21 +1,26 @@
 "use client"
 
 import { useContext, useState } from "react"
-import { FaSwimmingPool, FaWifi } from "react-icons/fa"
-import { PiTelevisionFill } from "react-icons/pi"
-import { TbAirConditioning } from "react-icons/tb"
-import { DataContext } from "../context"
+import { FaSwimmingPool, FaWifi } from "react-icons/fa";
+import { TbAirConditioning } from "react-icons/tb";
+import { PiTelevisionFill } from "react-icons/pi";
+import { IoMdArrowDropright } from "react-icons/io";
+import { GiRose } from "react-icons/gi";
+import { Slide } from "react-slideshow-image";
+import { RiSchoolFill } from "react-icons/ri";
+import { MdLiving } from "react-icons/md";
+import { AiOutlineSafety } from "react-icons/ai";
 
 export default function AddingFeatures(){
 
-    const feature=[<FaSwimmingPool color="white" size={50} />,<TbAirConditioning color="white" size={50} />,<PiTelevisionFill color="white" size={50}/>,<FaWifi color="white" size={50}/>]
+    const feature=[<FaSwimmingPool size={25} />,<TbAirConditioning size={25} />,<PiTelevisionFill size={25}/>,<FaWifi size={25}/>,<GiRose size={25}/>, <RiSchoolFill size={25}/>, <MdLiving size={25}/>,<AiOutlineSafety size={25}/>]
     const context=useContext(DataContext)
     
 
     return (
 
         <div>
-                        <h3 className="m-20 text-3xl font-bold mb-30 flex flex-center justify-center ">Select Features</h3>
+                   
 
                         <div className="grid  gap-3 md:grid-cols-3 ml-20 mb-24">
 
