@@ -1,13 +1,14 @@
 import React from "react"
 import Link from "next/link"
 
-// import AdressSeller from "../../Seller/AdressSeller"
+import AdressSeller from "../../Seller/AdressSeller"
 
 import HomeIcon from '@mui/icons-material/Home';
 import BedroomChildIcon from '@mui/icons-material/BedroomChild';
 import BedIcon from '@mui/icons-material/Bed';
 import PlaceIcon from '@mui/icons-material/Place';
 import './AddRentSeller.css'
+
 const AddRentSeller = () =>{
     return (
         <div className="all">
