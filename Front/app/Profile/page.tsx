@@ -9,6 +9,7 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import { NextPage } from 'next';
 import Satisfaction from "../Satisfaction";
+import { IoDocumentsOutline } from "react-icons/io5";
 // import Payment from "../payment/page";
 
 const style = {
@@ -153,23 +154,12 @@ const Profile: NextPage<ProfileProps> = ({user}) => {
           </div>
           <div className="card">
             <div className="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <path
-                  d="M20.0157 31C20.1626 31 20.299 31 20.4354 30.956C21.1173 30.802 21.6838 30.318 21.9461 29.658C22.051 29.394 22.114 29.097 22.114 28.8H17.9175C17.9175 29.3835 18.1386 29.9431 18.5321 30.3556C18.9256 30.7682 19.4593 31 20.0157 31ZM26.835 18.35C26.835 14.973 24.5899 12.146 21.5894 11.398V10.65C21.5894 10.2124 21.4236 9.79271 21.1285 9.48327C20.8334 9.17384 20.4331 9 20.0157 9C19.5984 9 19.1981 9.17384 18.903 9.48327C18.6079 9.79271 18.4421 10.2124 18.4421 10.65V11.398C15.4311 12.146 13.1965 14.973 13.1965 18.35V24.4L11.0982 26.6V27.7H28.9332V26.6L26.835 24.4V18.35ZM28.9018 17.8H31C30.8426 14.269 29.185 11.167 26.6776 9.165L25.1774 10.738C27.3176 12.3 28.7444 14.885 28.9018 17.8ZM14.8541 10.738L13.3538 9.165C10.8464 11.167 9.18884 14.269 9 17.8H11.0982C11.2871 14.885 12.7139 12.3 14.8541 10.738Z"
-                  fill="#686B6F"
-                />
-              </svg>
+             <IoDocumentsOutline/>
             </div>
-            <Link href="/Notification">  <div className="desc">
-              <p>Notifications</p>
+            <Link href="/Profile/AddDocs">  <div className="desc">
+              <p>Add Documents</p>
               <p>
-              Choose notifications and preferences , and how you want to be contacted 
+              Add necessary documents for transaction (National ID card, Contract...)
               </p>
             </div></Link>
           </div>
