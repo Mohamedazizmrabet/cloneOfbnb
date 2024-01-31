@@ -31,7 +31,7 @@ export default  function Features(){
   const context=useContext(DataContext)
 
     return (
-        <div className="bg-gray-200 flex flex-col m-10">
+        <div className="bg-gray-200 flex flex-col mt-16">
                     
              <h1 className=" text-3xl font-bold mt-3 ml-3">Our Features</h1>
              <p className=" mt-3 ml-3">It doesn't matter if you have a great real estate property with you, it will all be considered useless if you don't have the ability to get a tenant for the place. At the end of the day, the goal of a real estate company or agent is to earn handsome profits. 

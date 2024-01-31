@@ -17,6 +17,7 @@ import Link from "next/link"
 import { Slide } from "react-slideshow-image";
 import Satisfaction from "../Satisfaction";
 import axios from "axios";
+import Targets from "./Targets";
 
 
 export default function AuthenticatedHome(){
@@ -139,6 +140,8 @@ export default function AuthenticatedHome(){
                   )
                 })}
                 </div>
+                <h1 className=" text-3xl font-bold mt-3 ml-8">Search By Subject </h1>
+                <Targets/>
 
                 <h1 className=" text-3xl font-bold mt-3 ml-8">Our Offers</h1>
  
@@ -220,11 +223,11 @@ export default function AuthenticatedHome(){
 
  }              
                 
-
+          
                 <QuestionRes/>
                 
                 <Info/>
-          
+    
 
 </div>
 
