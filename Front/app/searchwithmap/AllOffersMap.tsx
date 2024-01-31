@@ -1,10 +1,12 @@
 "use client"
+import 'leaflet/dist/leaflet.css'
 import "leaflet-control-geocoder/dist/Control.Geocoder.css"
 import "leaflet-control-geocoder/dist/Control.Geocoder.js"
 import "leaflet-routing-machine"
 import "leaflet-routing-machine/dist/leaflet-routing-machine.css"
 import "leaflet-control-geocoder/dist/Control.Geocoder.css"
 import "leaflet-control-geocoder/dist/Control.Geocoder.js"
+
 import { useEffect, useState } from "react"
 import L, { latLng } from "leaflet";
 import { useMap } from "react-leaflet";
