@@ -70,6 +70,18 @@ async function getOffers(req, res) {
       res.status(400).json({ error: error.message });
     }
   }
+
+  async function getOffersbyType(req, res) {
+    try {
+      const offers = await Offer.findAll({where:{offerType:req.params.offerType}});
+      res.status(200).json(offers)
+
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+
+
   module.exports = {
     getOffersbyUser,
     getOffers,
@@ -77,5 +89,6 @@ async function getOffers(req, res) {
     createOffer,
     updateOffer,
     deleteOffer,
-    getOffersbyRegion
+    getOffersbyRegion,
+    getOffersbyType
   };
