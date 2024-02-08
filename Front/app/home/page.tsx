@@ -39,6 +39,10 @@ export default function AuthenticatedHome(){
     ]);
 
 
+    useEffect(()=>{
+      if((date[0].endDate)!==(date[0].startDate))setOpenDate(false)
+    },[date[0].endDate])
+
     console.log(offer)
     const inputStart=format(date[0].startDate,'yyyy-MM-dd' )
     const inputEnd=format(date[0].endDate,'yyyy-MM-dd' )
