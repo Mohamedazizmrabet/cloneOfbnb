@@ -10,6 +10,7 @@ import Modal from "@mui/material/Modal";
 import { NextPage } from 'next';
 import Satisfaction from "../Satisfaction";
 import { IoDocumentsOutline } from "react-icons/io5";
+import DropDown from "./DropDown"
 // import Payment from "../payment/page";
 
 const style = {
@@ -79,6 +80,8 @@ const Profile: NextPage<ProfileProps> = ({user}) => {
   
   
   return (
+    <div>
+      <DropDown/>
     <div className="profile-wrapper">
       <div className="profile-content">
         <div className="profile-header">
@@ -153,12 +156,12 @@ const Profile: NextPage<ProfileProps> = ({user}) => {
             </div></Link>
           </div>
           <div className="card">
-            <div className="icon">
+            <div className="ml-3">
              <IoDocumentsOutline/>
             </div>
             <Link href="/Profile/AddDocs">  <div className="desc">
-              <p>Add Documents</p>
-              <p>
+              <p className="ml-3">Add Documents</p>
+              <p className="ml-3 w-full">
               Add necessary documents for transaction (National ID card, Contract...)
               </p>
             </div></Link>
@@ -301,7 +304,7 @@ const Profile: NextPage<ProfileProps> = ({user}) => {
         </Box>
       </Modal>
       <Satisfaction/>
-
+      </div>
     </div>
   );
 } 

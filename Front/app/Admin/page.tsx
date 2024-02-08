@@ -123,7 +123,7 @@ useEffect(() => {
       {/*Header of Dashboard*/}
     <div className='flex flex-r gap-8 ml-11'>
 <div className=' w-64 h-32 rounded-xl bg-pink-700 mt-10 p-3 pt-6 text-white justify-center'> <span className='font-bold text-xl ml-14 mr-4'>{users.length}</span>Total Users <FaUsers className='ml-20' size={55} /></div>
-<div className='w-64 h-32 rounded-xl bg-sky-600 mt-10 pt-6  text-white'><span className='font-bold text-xl pl-10'>{purcentage}% </span> Total Satisfaction <div className='flex flex-r gap-6 ml-20 mt-5'><BsEmojiGrin size={30}/> < BsEmojiFrown size={30}/></div> </div>
+<div className='w-64 h-32 rounded-xl bg-sky-600 mt-10 pt-6  text-white'><span className='font-bold text-xl pl-10'>{purcentage.toFixed(2)}% </span> Total Satisfaction <div className='flex flex-r gap-6 ml-20 mt-5'><BsEmojiGrin size={30}/> < BsEmojiFrown size={30}/></div> </div>
 <div className=' w-72 h-32 rounded-xl bg-green-600 mt-10 pt-6 p-3 text-white ml-5'><span className='font-bold text-xl pl-3'> 3800 DT</span> Gain For This Month <GiChart className='ml-20' size={50} /></div>
 <div className='w-72 h-32 rounded-xl bg-amber-400 mt-10 p-3 pt-6 text-white ml-5'><span className='font-bold text-xl pl-3'>{reserv.length} </span> Confirmed Rents Until Now<BsBuildings className=' ml-24' size={50} /> </div>
     </div>
