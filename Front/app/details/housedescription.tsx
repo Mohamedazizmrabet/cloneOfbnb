@@ -5,7 +5,10 @@ import { PiHouseLine } from "react-icons/pi";
 import { BsDoorOpen } from "react-icons/bs";
 import { SlCalender } from "react-icons/sl";
 import { DataContext } from '../context'
+import {QRCodeCanvas} from 'qrcode.react';
+import logo from '../../public/home.png'
 import user from '../../types/user'
+
 const HouseDescription = () => {
     const [host,setHost]=useState<user[]>([])
     const  context = useContext(DataContext);
@@ -26,6 +29,10 @@ useEffect(()=>{
             className="w-16 h-16 rounded-[300px]"
             /></div>
         </div>
+
+
+<div className="flex flex-r">
+
         <div className="mt-[30px] flex flex-col gap-8">
             <div className="flex flex-row items-center"><PiHouseLine size={32} />
                 <div className="ml-[15px]">
@@ -50,6 +57,28 @@ useEffect(()=>{
             </div>
             <hr className="w-[680px] border-t border-gray-300 my-4" />
         </div>
+
+<div className="mt-12 ml-[-80px] "><QRCodeCanvas
+                value={context?.oneHouse.qrCode}
+                size={150}
+                bgColor={"#ffffff"}
+                fgColor={"#000000"}
+                level={"L"}
+                includeMargin={false}
+                imageSettings={{
+                    src:logo.src,
+                    x: undefined,
+                    y: undefined,
+                    height: 30,
+                    width: 30,
+                    excavate: true,
+                }}
+                /></div>
+
+
+        </div>
+
+
     </div> );
 }
  
